@@ -69,6 +69,3 @@ def blog_detail(request, blog_pk):
     context['next_blog'] = Blog.objects.filter(created_time__lt=blog.created_time).first()
     context['blog'] = blog
     return render_to_response('blog/blog_detail.html', context)
-
-
-
