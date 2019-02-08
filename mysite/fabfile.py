@@ -10,4 +10,4 @@ def deploy():
         run('ls')
         with cd('/home/mysite_uwsgi'):
             run('ls')
-#           run('uwsgi --reload master.pid')
+#            run('uwsgi --reload master.pid')
